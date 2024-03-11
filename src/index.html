@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tourism Destination - Travel Adventures</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color: beige; Set background color to beige */
+            background-image: url('tourism1.jpg'); /* Add the path to your image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background */
+            background-repeat: no-repeat; /* Prevent the background from repeating */
+            backdrop-filter: blur(5px); /* Apply a blur effect */
+        }
+
+        .navbar {
+            background-color: brown;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #d2b48c;
+            color: white;
+        }
+
+        .header {
+            background-color: url('tourism1.jpg'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 100px 0;
+            border: #d2b48c;
+        }
+
+        .container {
+            max-width: 800px; /* Set max-width for the container */
+            margin: 0 auto;
+            padding: 20px; /* Increase padding */
+            background-color: white; /* Add a white background to the container */
+            border-radius: 10px; /* Add rounded corners to the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            margin-bottom: 40px;
+            border: 2px solid #ccc;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .feature {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .feature img {
+            max-width: 100%; /* Set maximum width to 100% of the container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .cta {
+            margin-top: 50px;
+        }
+
+        .cta button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+
+        .feature {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            border-right: 1px solid black; /* Add right border */
+        }
+
+        .feature:last-child {
+            border-right: none; /* Remove right border for the last feature */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a>></a>
+    <a href="index.html">Home</a>
+    <a href="reccomend.html">Recommended Country</a>
+    <a href="detailinfo.html">Detail Information</a>
+    <a href="saved.html">Saved</a>
+</div>
+
+<div class="header">
+    <h1>Your Tourism Destination Travel Adventures</h1>
+    <p>Welcome to Your Ultimate Adventure Destination</p>
+    <p>Explore, Dream, Discover</p>
+</div>
+
+<div class="container">
+    <h2>Discover Your Destination</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="landscapes.jpg" alt="Image 1">
+            <h3>Breathtaking Landscapes</h3>
+            <p>Explore our stunning natural wonders, from majestic mountains to pristine beaches.</p>
+        </div>
+        <div class="feature">
+            <img src="stone.jpg" alt="Image 2">
+            <h3>Cultural Treasures</h3>
+            <p>Immerse yourself in the rich history and vibrant culture of Your Destination.</p>
+        </div>
+        <div class="feature">
+            <img src="thrill.jpg" alt="Image 3">
+            <h3>Thrilling Activities</h3>
+            <p>Get your adrenaline pumping with a range of exciting adventures, from hiking and water sports to wildlife safaris.</p>
+        </div>
+    </div>
+</div>    
+
+<br>
+
+<div class="container">
+    <h2>Get a brief information about your destination here!</h2>
+
+    <input type="text" id="countryinput" placeholder="Search Your Country:">
+    <button type="button" onclick="buttonClicked()">Enter</button>
+    <br>
+    <img id="flag" src="">
+    <br>
+    <label>Country Name: </label>
+    <p id="officialname"></p>
+    <br>
+    <label>Commonly Known As: </label>
+    <p id="common"></p>
+    <br>
+    <label>Region: </label>
+    <p id="region"></p>
+    <br>
+    <label>Capital: </label>
+    <p id="capital"></p>
+    <br>
+
+</div>
+
+<script src="fetchAPI.js"></script>
+
+</body>
+</html>

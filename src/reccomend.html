@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tourism Destination - Travel Adventures</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color: beige; Set background color to beige */
+            background-image: url('tourism1.jpg'); /* Add the path to your image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background */
+            background-repeat: no-repeat; /* Prevent the background from repeating */
+            backdrop-filter: blur(5px); /* Apply a blur effect */
+        }
+
+        .navbar {
+            background-color: brown;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #d2b48c;
+            color: white;
+        }
+
+        .header {
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .container, .container1 {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white; /* Add a white background to the container */
+            border-radius: 10px; /* Add rounded corners to the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            margin-bottom: 40px; /* Add gap between containers */
+            border: 2px solid  #ccc;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .feature {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            border-right: 1px solid black; /* Add right border */
+        }
+
+        .feature:last-child {
+            border-right: none; /* Remove right border for the last feature */
+        }
+
+        .feature img {
+            max-width: 100%; /* Ensure images don't exceed their container's width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Add rounded corners to images */
+            margin-bottom: 10px; /* Add some space below the images */
+        }
+
+
+        .cta {
+            margin-top: 50px;
+        }
+
+        .cta button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a>></a>
+    <a href="index.html">Home</a>
+    <a href="reccomend.html">Recommended Country</a>
+    <a href="detailinfo.html">Detail Information</a>
+    <a href="saved.html">Saved</a>
+</div>
+
+<div class="header">
+    <h1>Your Tourism Destination Travel Adventures</h1>
+    <p>Welcome to Your Ultimate Adventure Destination</p>
+    <p>Explore, Dream, Discover</p>
+</div>
+
+<br>
+<br>
+
+<div class="container">
+    <h2>Recommended country for you!</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="canada.jpg" alt="Image 1">
+            <h3>Canada</h3>
+            <p>Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the world's second-largest country by total area, with the world's longest coastline.</p>
+        </div>
+        <div class="feature">
+            <img src="UK.jpg" alt="Image 2">
+            <h3>United Kingdom</h3>
+            <p>The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain, is a country in Northwestern Europe, off the north-western coast of the continental mainland.</p>
+        </div>
+        <div class="feature">
+            <img src="germany.jpg" alt="Image 3">
+            <h3>Germany</h3>
+            <p>Germany, officially the Federal Republic of Germany, is a country in the western region of Central Europe. It is the second-most populous country in Europe after Russia, and the most populous member state of the European Union.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container1">
+    <h2>Exchange Rate</h2>
+    <div class="features">
+        <div class="feature">
+            <img src="canadaflag.png" alt="Image 4">
+            <h3>Canada</h3>
+            <p>Malaysia (RM) > Canada (CAD)<br>RM 1.00 = CAD 0.29</p>
+        </div>
+        <div class="feature">
+            <img src="ukflag.png" alt="Image 5">
+            <h3>United Kingdom</h3>
+            <p>Malaysia (RM) > United Kingdom (GBP)<br>RM 1.00 = GBP 0.17</p>
+        </div>
+        <div class="feature">
+            <img src="germanyflag.png" alt="Image 6">
+            <h3>Germany</h3>
+            <p>Malaysia (RM) > Germany (EUR)<br>RM 1.00 = EUR 0.20</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

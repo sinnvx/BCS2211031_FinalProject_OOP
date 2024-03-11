@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tourism Destination - Travel Adventures</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige; 
+
+        }
+
+        .navbar {
+            background-color: #d2b48c;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #a52a2a;
+            color: white;
+        }
+
+        .header {
+            background-color: beige; /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 30px; /* Add space between header and input */
+        }
+
+        .input-container {
+            background-color: beige; /* Set background color to beige */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .input-container input[type="text"] {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            width: 70%; /* Adjust width of input */
+        }
+
+        .input-container button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .input-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .container {
+            display: flex; /* Add flexbox */
+            justify-content: space-between; /* Add space between the two containers */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid  #ccc;
+            margin-bottom: 40px;
+            background-color: white; /* Add a white background to the container */
+        }
+
+        .info, .info1 {
+            flex: 1; /* Distribute available space equally */
+            text-align: left;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .feature {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cta {
+            margin-top: 50px;
+        }
+
+        .cta button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+
+        img {
+            border: 2px solid black;
+            max-width: 100%; /* Ensure images fit within their containers */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a>></a>
+    <a href="index.html">Home</a>
+    <a href="reccomend.html">Recommended Country</a>
+    <a href="detailinfo.html">Detail Information</a>
+    <a href="saved.html">Saved</a>
+</div>
+
+<div class="header">
+    <h1>Get all the important information with just one click!</h1>
+    <p>Explore, Dream, Discover</p>
+</div>
+
+<div class="input-container">
+    <input type="text" id="countryinput" placeholder="Search Your Country">
+    <button type="button" onclick="buttonClicked()">Enter</button>
+</div>
+<br>
+<br>
+<center><img id="flag" src=""></center>
+<br>
+<br>
+<div class="container">
+    <div class="info">
+        <label>Country Name: </label>
+        <p id="officialname"></p>
+        <br>
+        <label>Commonly Known As: </label>
+        <p id="common"></p>
+        <br>
+        <label>Timezones: </label>
+        <p id="timezones"></p>
+        <br>
+        <label>Region: </label>
+        <p id="region"></p>
+        <br>
+        <label>Capital: </label>
+        <p id="capital"></p>
+        <br>
+        <label>Currencies: </label>
+        <p id="currencies"></p>
+        <br>
+        <label>Languages Used: </label>
+        <p id="languages"></p>
+        <br>
+    </div>
+    <div class="info1">
+        <label>Population: </label>
+        <p id="population"></p>
+        <br>
+        <label>Border: </label>
+        <p id="borders"></p>
+        <br>
+        <label>Continent: </label>
+        <p id="continents"></p>
+        <br>
+        <label>></label>
+        <a id="googlemap" target="_blank">Google Maps</a>
+        <br>
+    </div>
+</div>
+
+<script src="fetchAPI.js"></script>
+
+</body>
+</html>

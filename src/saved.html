@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Form and Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige; /* Beige background color */
+        }
+
+        .navbar {
+            background-color: #d2b48c; /* Tan color for the navbar */
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #a52a2a; /* Dark red hover color */
+            color: white;
+        }
+
+        form {
+            margin-bottom: 16px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+            max-width: 400px; /* Smaller form width */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5deb3; /* Wheat color for table header */
+        }
+
+        button {
+            margin-top: 16px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #8b4513; /* Saddle Brown color for buttons */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #a0522d; /* Sienna color on hover */
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: calc(100% - 22px); /* Adjusted width for smaller input boxes */
+            padding: 6px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Style the form labels */
+        label {
+            font-weight: bold;
+            color: #8b4513; /* Saddle Brown color for labels */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a>></a>
+        <a href="index.html">Home</a>
+        <a href="reccomend.html">Recommended Country</a>
+        <a href="detailinfo.html">Detail Information</a>
+        <a href="saved.html">Saved</a>
+    </div>
+    <br>
+    <br>
+    <form id="dataForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country"><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <br>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Country</th>
+                <th>Date</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="dataBody">
+        </tbody>
+    </table>
+    <script src="CRUD.js"></script>
+</body>
+</html>
